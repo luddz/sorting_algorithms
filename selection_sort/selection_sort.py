@@ -7,8 +7,6 @@ def selection_sort(to_sort):
                 smallest_index = j
 
         if smallest_index != i:
-            tmp = to_sort[smallest_index]
-            to_sort[smallest_index] = to_sort[i]
-            to_sort[i] = tmp
-
+            to_sort[i], to_sort[smallest_index] = to_sort[smallest_index], to_sort[i]
+            
     return to_sort
