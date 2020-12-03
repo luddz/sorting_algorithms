@@ -1,11 +1,3 @@
-def test_selection_sort():
-    empty_list = []
-    print(selection_sort(empty_list))
-
-    tmp = [2,3,3,3,3,3,2,2,2,1,1,1,0,4,5,6,7]
-    print(tmp)
-    print(selection_sort(tmp))
-
 def selection_sort(to_sort):
     list_length = len(to_sort)
     for i in range(list_length):
@@ -20,6 +12,3 @@ def selection_sort(to_sort):
             to_sort[i] = tmp
 
     return to_sort
-
-
-test_selection_sort()
